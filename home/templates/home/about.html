@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+            <header class="site-header section-padding-img site-header-image">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 header-info">
+                            <h1>
+                                <span class="d-block text-primary">Company</span>
+                                <span class="d-block text-dark">EDITIFY</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="{% static 'assets/images/people/businesspeople-meeting-office-working.jpg' %}" class="header-image img-fluid" alt="">
+            </header>
+
+            <section class="team section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <h2 class="mb-5">Meet our <span>team</span></h2>
+                        </div>
+
+                        <div class="col-lg-4 mb-4 col-12">
+                            <div class="team-thumb d-flex align-items-center">
+                                <img src="{% static 'assets/images/people/307ce493-b254-4b2d-8ba4-d12c080d6651.jpg' %}" class="img-fluid custom-circle-image team-image me-4" alt="">
+
+                                <div class="team-info">
+                                    <h5 class="mb-0">پویا پروا</h5>
+                                    <a class="text-muted">pooya.parva81@gmail.com</a>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-4 col-12">
+                            <div class="team-thumb d-flex align-items-center">
+                                <img src="{% static 'assets/images/people/307ce493-b254-4b2d-8ba4-d12c080d6651.jpg' %}" class="img-fluid custom-circle-image team-image me-4" alt="">
+
+                                <div class="team-info">
+                                    <h5 class="mb-0">شادمهر قاسمی</h5>
+                                    <strong class="text-muted"></strong>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+           <section class="products section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <h2 class="mb-5">مقالات پیشین</h2>
+                        </div>
+
+<!--                        <div class="col-lg-4 col-12 mb-3">-->
+<!--                            <div class="product-thumb">-->
+<!--                                <a href="product-detail.html">-->
+<!--                                    <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">-->
+<!--                                </a>-->
+
+<!--                                <div class="product-top d-flex">-->
+<!--                                    <span class="product-alert me-auto">New Arrival</span>-->
+
+<!--                                    <a href="#" class="bi-heart-fill product-icon"></a>-->
+<!--                                </div>-->
+
+<!--                                <div class="product-info d-flex">-->
+<!--                                    <div>-->
+<!--                                        <h5 class="product-title mb-0">-->
+<!--                                            <a href="product-detail.html" class="product-title-link">Tree pot</a>-->
+<!--                                        </h5>-->
+
+<!--                                        <p class="product-p">Original package design from house</p>-->
+<!--                                    </div>-->
+
+<!--                                    <small class="product-price text-muted ms-auto">$25</small>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                                                    {% for article in articles %}
+                        <div class="col-lg-4 col-12 mb-3">
+                            <div class="product-thumb">
+                                <a href="product-detail.html">
+                                    <img src="{% static 'assets/images/product/pexels-anna-keibalo-620756389-17706646.jpg' %}" class="img-fluid product-image" alt="">
+                                </a>
+
+                                <div class="product-top d-flex">
+                                    <span class="product-alert me-auto">{{article.Author}}</span>
+
+<!--                                    <a href="#" class="bi-heart-fill product-icon"></a>-->
+                                </div>
+
+                                <div class="product-info d-flex">
+                                    <div>
+                                        <h5 class="product-title mb-0">
+                                            <a href="product-detail.html" class="product-title-link">{{article.title}}</a>
+                                        </h5>
+
+                                        <p class="product-p">{{article.summery|truncatewords:10 }}</p>
+                                    </div>
+
+                                    <small class="product-price text-muted ms-auto mt-auto mb-5">{{article.created|date:"Y"}}</small>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+
+
+                    </div>
+                </div>
+            </section>
+
+{% endblock %}
