@@ -1,1 +1,1 @@
-curl -O https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh
+vless://b496ff1e-0b4b-4ce7-9a62-d9140932961f@s2.ttay.xyz:1008?encryption=none&security=none&type=tcp&headerType=http&host=www.speedtest.net#%F0%9F%87%B9%F0%9F%87%B7%20%5B82c2_pooya2%5D%202
